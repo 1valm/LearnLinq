@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnLinq - Платформа репетиторства</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Emblema+One&family=El+Messiri&family=Great+Vibes&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">     
+    <link rel="stylesheet" href="./css/responsive.css"> 
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <img src="./images/лого.png">
+            <div class="l">L</div>
+            <div class="earn">earn</div>
+            <div class="linq">Linq</div>
+        </div>
+        
+        <div class="nav">
+            <div class="nav-item" data-page="home">Главная</div>
+            <div class="nav-item" data-page="about">О нас</div>
+            <div class="nav-item" data-page="catalog">Каталог репетиторов</div>
+            <div class="nav-item" data-page="virtual-class">Виртуальный класс</div>
+            <div class="nav-item" data-page="contacts">Контакты</div>
+            <div class="login-btn" id="openLogin">Войти</div>
+        </div>
+    </div>
+
+    <!-- Главная страница -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">Платформа репетиторства<br>LearnLinq</h1>
+                <p class="subtitle">С нуля до свободного знания всех предметов; ваше путешествие по миру знаний начинается здесь</p>
+                <div class="catalog-btn nav-item" data-page="catalog">Каталог</div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="./images/первый хиро.jpg" alt="Студенты за обучением">
+            </div>
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M16 11.78l4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8l6.5 3.78z"/>
+</svg>
+                </div>
+                <div class="stat-number">8</div>
+                <div class="stat-text">лет на рынке онлайн образования</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+</svg>
+                </div>
+                <div class="stat-number">5 лет</div>
+                <div class="stat-text">средний стаж всех репетиторов</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                </div>
+                <div class="stat-number">5000+</div>
+                <div class="stat-text">студентов прошли обучение</div>
+            </div>
+        </div>
+        
+        <!-- Subjects Section -->
+        <div class="subjects">
+            <h2 class="section-title">Популярные <span>направления</span></h2>
+            <div class="subjects-grid">
+                <div class="subject-item">Математика</div>
+                <div class="subject-item">Физика</div>
+                <div class="subject-item">Химия</div>
+                <div class="subject-item">Обществознание</div>
+                <div class="subject-item">Информатика</div>
+                <div class="subject-item">Биология</div>
+                <div class="subject-item">Русский язык</div>
+                <div class="subject-item">Английский</div>
+            </div>
+        </div>
+        
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h2 class="section-title">Лучшие отзывы</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class="review-date">22.02.2025</div>
+                    <div class="review-text">
+                        Благодаря LearnLinq я смогла поднять свои баллы по математике с 60 до 90! Репетитор Анна Ивановна замечательная, все объясняет понятно и доступно.
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="./images/1 ава.jpg" alt="Ольга Вестникова">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Ольга Вестникова</div>
+                            <div class="author-role">Ученица 11 класса</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class="review-date">01.09.2025</div>
+                    <div class="review-text">
+                        Отличная платформа для изучения программирования! Занимаюсь с Михаилом уже 3 месяца, перешел с нуля на уверенное владение Python.
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="./images/2 ава.jpg" alt="Дмитрий Волков">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Дмитрий Волков</div>
+                            <div class="author-role">Студент 2 курса</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class="review-date">15.03.2024</div>
+                    <div class="review-text">
+                        Очень удобно, что можно заниматься из дома. Сын готовится к ОГЭ по физике, результаты уже заметны. Виртуальный класс работает отлично!
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="./images/3 ава.jpg" alt="Марина Констанова">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Марина Констанова</div>
+                            <div class="author-role">Мама ученика</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница "О нас" -->
+    <div id="about" class="page">
+        <!-- Hero Section -->
+        <div class="about-hero">
+            <div class="about-hero-content">
+                <h1 class="about-title">О компании LearnLinq</h1>
+                <p class="about-subtitle">Современная платформа для дистанционного обучения, объединяющая лучших репетиторов и мотивированных учеников</p>
+            </div>
+        </div>
+        
+        <!-- About Content Section -->
+        <div class="about-content">
+            <h2 class="section-title">Наша <span>история</span></h2>
+            <p class="about-text">
+                LearnLinq — это современная платформа для дистанционного обучения, которая объединяет лучших репетиторов и мотивированных учеников. 
+                Мы верим, что качественное образование должно быть доступным для каждого, независимо от местоположения.
+            </p>
+        </div>
+        
+        <!-- Timeline Section -->
+        <div class="timeline-section">
+            <h2 class="section-title">Наш <span>путь</span></h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020 год</div>
+                        <div class="timeline-text">
+                            Основание компании LearnLinq. Первые 10 репетиторов и 50 учеников. 
+                            Запуск базовой платформы для онлайн-обучения.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021 год</div>
+                        <div class="timeline-text">
+                            Расширение команды до 100 репетиторов. Добавление виртуального класса с интерактивной доской. 
+                            Более 1000 довольных учеников.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022 год</div>
+                        <div class="timeline-text">
+                            Запуск мобильного приложения. Партнерство с ведущими образовательными учреждениями. 
+                            200+ репетиторов и 5000+ учеников.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023-2024 год</div>
+                        <div class="timeline-text">
+                            Расширение команды до 100 репетиторов. Добавление виртуального класса с интерактивной доской. 
+                            Более 1000 довольных учеников.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025 год</div>
+                        <div class="timeline-text">
+                            Становление ведущей платформой онлайн-образования в России и странах СНГ. 
+                            Более 500 репетиторов и 10000+ учеников.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mission Section -->
+        <div class="mission-section">
+            <div class="mission-item">
+                <div class="mission-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3 class="mission-title">Наша миссия</h3>
+                <p class="mission-text">
+                    Сделать качественное образование доступным каждому ученику в России и странах СНГ, 
+                    обеспечив удобную платформу для взаимодействия учеников и лучших репетиторов страны.
+                </p>
+            </div>
+            
+            <div class="mission-item">
+                <div class="mission-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+</svg>
+                </div>
+                <h3 class="mission-title">Наше видение</h3>
+                <p class="mission-text">
+                    Стать ведущей международной платформой онлайн-образования, где каждый может найти идеального 
+                    преподавателя и достичь своих учебных целей, независимо от местоположения.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница "Каталог репетиторов" -->
+    <div id="catalog" class="page">
+        <!-- Hero Section -->
+        <div class="catalog-hero">
+            <div class="about-hero-content">
+                <h1 class="catalog-title">Каталог репетиторов</h1>
+                <p class="catalog-subtitle">Найдите идеального преподавателя для достижения ваших целей</p>
+            </div>
+        </div>
+        
+        <!-- Catalog Content -->
+        <div class="catalog-content">
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Поиск по имени или предмету ...">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="tutors-count">Популярные репетиторы: 16</div>
+            </div>
+            
+            <div class="filters-section">
+                <div class="filter-group">
+                    <div class="filter-label">Предмет</div>
+                    <select class="filter-select">
+                        <option>Все предметы</option>
+                        <option>Математика</option>
+                        <option>Физика</option>
+                        <option>Химия</option>
+                        <option>Программирование</option>
+                        <option>Русский язык</option>
+                        <option>Английский</option>
+                        <option>История</option>
+                        <option>Биология</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-label">Цена за час</div>
+                    <select class="filter-select">
+                        <option>Любая</option>
+                        <option>до 1000 руб</option>
+                        <option>1000-1500 руб</option>
+                        <option>1500-2000 руб</option>
+                        <option>свыше 2000 руб</option>
+                    </select>
+                </div>
+                
+                <button class="reset-filters">Сбросить фильтры</button>
+            </div>
+            
+            <div class="tutors-grid">
+                <!-- Tutor Card 1 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/анна ивановна.jpg" alt="Анна Ивановна" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Анна Ивановна</div>
+                            <div class="tutor-subject">Математика (ЕГЭ)</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Опытный преподаватель математики. Подготовка к ЕГЭ, ОГЭ. Индивидуальный подход к каждому ученику.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 8 лет</div>
+                        <div class="tutor-reviews">227 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 1200 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('anna')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 2 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/ольга козлова.jpg" alt="Ольга Козлова" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Ольга Козлова</div>
+                            <div class="tutor-subject">Программирование</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Full-stack разработчик. Обучение Python, JavaScript, React. Помощь в создании проектов и портфолио.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 10 лет</div>
+                        <div class="tutor-reviews">227 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 2200 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('olga')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 3 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/александр новиков.jpg" alt="Александр Новиков" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Александр Новиков</div>
+                            <div class="tutor-subject">Русский язык</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Филолог, преподаватель высшей категории. Подготовка к ЕГЭ, сочинения, повышение грамотности.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 9 лет</div>
+                        <div class="tutor-reviews">127 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 1100 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('alexander')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 4 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/наталья волкова.jpg" alt="Наталья Волкова" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Наталья Волкова</div>
+                            <div class="tutor-subject">Химия (ЕГЭ)</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Магистр химических наук. Подготовка к экзаменам и олимпиадам. Практический подход к обучению.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 10 лет</div>
+                        <div class="tutor-reviews">129 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 2200 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('natalia')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 5 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/михаил лапов.jpg" alt="Михаил Лапов" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Михаил Лапов</div>
+                            <div class="tutor-subject">История/Обществознание</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Кандидат исторических наук. Подготовка к ЕГЭ, углубленное изучение истории России и мира.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 10 лет</div>
+                        <div class="tutor-reviews">120 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 1700 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('mikhail')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 6 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/марьям павлова.jpg" alt="Марьям Павлова" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Марьям Павлова</div>
+                            <div class="tutor-subject">Биология</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Биолог, преподаватель медицинского университета. Подготовка к ЕГЭ и поступлению в медвузы.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 12 лет</div>
+                        <div class="tutor-reviews">121 отзыв</div>
+                    </div>
+                    <div class="tutor-price">от 1900 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('maryam')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 7 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/виктор семенов.jpg" alt="Виктор Семенов" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Виктор Семенов</div>
+                            <div class="tutor-subject">Обществознание (ЕГЭ)</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Преподаватель обществознания. Эксперт ЕГЭ. Системный подход к подготовке, разбор сложных тем.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 9 лет</div>
+                        <div class="tutor-reviews">157 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 1900 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('viktor')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+                
+                <!-- Tutor Card 8 -->
+                <div class="tutor-card">
+                    <div class="tutor-header">
+                        <img src="./images/светлана одинцова.jpg" alt="Светлана Одинцова" class="tutor-avatar">
+                        <div class="tutor-info">
+                            <div class="tutor-name">Светлана Одинцова</div>
+                            <div class="tutor-subject">Информатика</div>
+                            <div class="tutor-rating">
+                                <div class="rating-stars">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <div class="rating-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-description">
+                        Программист, преподаватель информатики. Подготовка к ЕГЭ, олимпиадам по информатике.
+                    </div>
+                    <div class="tutor-stats">
+                        <div class="tutor-experience">Опыт: 12 лет</div>
+                        <div class="tutor-reviews">197 отзывов</div>
+                    </div>
+                    <div class="tutor-price">от 3200 р/час</div>
+                    <div class="tutor-actions">
+                        <button class="btn-details" onclick="openModal('svetlana')">Подробнее</button>
+                        <button class="btn-signup">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница виртуального класса -->
+    <div id="virtual-class" class="page">
+        <div class="virtual-class">
+            <div class="class-header">
+                <h1 class="class-title">Виртуальный класс: Математика с Анной Ивановной</h1>
+                <div class="class-info">
+                    <div>Ученик: Иван Иванов</div>
+                    <div>Время: 15 мая, 16:00 - 17:00</div>
+                    <div>Продолжительность: 60 минут</div>
+                </div>
+            </div>
+            
+            <div class="class-content">
+                <div class="video-section">
+                    <div class="main-video">
+                        <div class="video-container">
+                            <div>Видео репетитора</div>
+                            <div class="participant-name">Анна Ивановна</div>
+                        </div>
+                    </div>
+                    
+                    <div class="participants-grid">
+                        <div class="participant-video">
+                            <div>Ваше видео</div>
+                            <div class="participant-name">Иван Иванов</div>
+                        </div>
+                        <div class="participant-video">
+                            <div>Участник 2</div>
+                            <div class="participant-name">Мария Петрова</div>
+                        </div>
+                        <div class="participant-video">
+                            <div>Участник 3</div>
+                            <div class="participant-name">Алексей Сидоров</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="whiteboard-section">
+                    <div class="whiteboard-toolbar">
+                        <div class="tool-group">
+                            <div class="tool-btn active" data-tool="pen" title="Кисть">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                    <path d="M2 2l7.586 7.586"></path>
+                                    <circle cx="11" cy="11" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" data-tool="eraser" title="Ластик">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 21l-6-6m6 6v-4.8m0 4.8h-4.8"></path>
+                                    <path d="M3 16.8V21h4.8L18 12.6 13.2 7.8 3 16.8z"></path>
+                                    <path d="M16.8 3L21 7.2"></path>
+                                    <path d="M13.2 7.8L16.8 3"></path>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" data-tool="line" title="Линия">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" data-tool="rectangle" title="Прямоугольник">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" data-tool="circle" title="Круг">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" data-tool="text" title="Текст">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="4,7 4,4 20,4 20,7"></polyline>
+                                    <line x1="9" y1="20" x2="15" y2="20"></line>
+                                    <line x1="12" y1="4" x2="12" y2="20"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-group">
+                            <div class="color-picker">
+                                <div class="color-option active" style="background-color: #000000;" data-color="#000000"></div>
+                                <div class="color-option" style="background-color: #ff3b30;" data-color="#ff3b30"></div>
+                                <div class="color-option" style="background-color: #4cd964;" data-color="#4cd964"></div>
+                                <div class="color-option" style="background-color: #007aff;" data-color="#007aff"></div>
+                                <div class="color-option" style="background-color: #5856d6;" data-color="#5856d6"></div>
+                                <div class="color-option" style="background-color: #ff9500;" data-color="#ff9500"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-group">
+                            <input type="range" id="brushSize" min="1" max="20" value="3" title="Размер кисти">
+                        </div>
+                        
+                        <div class="tool-group">
+                            <div class="tool-btn" id="clearCanvas" title="Очистить доску">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"></polyline>
+                                    <path d="M19,6v14a2,2 0 0,1 -2,2h-10a2,2 0 0,1 -2,-2v-14"></path>
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </svg>
+                            </div>
+                            <div class="tool-btn" id="undoAction" title="Отменить">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 10h10a8 8 0 0 1 8 8v0a8 8 0 0 1-8 8H3"></path>
+                                    <path d="M3 10l4-4-4-4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="whiteboard-canvas">
+                        <canvas id="whiteboard"></canvas>
+                        <div class="whiteboard-overlay">
+                            <div class="drawing-cursor"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-section">
+                    <div class="chat-header">Чат занятия</div>
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <div class="message-sender">Анна Ивановна</div>
+                            <div>Добрый день, Иван! Готовы начать наше занятие?</div>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-sender">Вы</div>
+                            <div>Да, конечно! Добрый день!</div>
+                        </div>
+                        <div class="message received">
+                            <div class="message-sender">Анна Ивановна</div>
+                            <div>Отлично! Сегодня мы продолжим разбирать решение уравнений. Откройте, пожалуйста, учебник на странице 45.</div>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-sender">Вы</div>
+                            <div>Хорошо, открыл.</div>
+                        </div>
+                        <div class="message received">
+                            <div class="message-sender">Анна Ивановна</div>
+                            <div>Сейчас я нарисую на доске пример, который мы будем разбирать.</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Введите сообщение...">
+                        <button class="chat-send">Отправить</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls-section">
+                <button class="control-btn" title="Включить/выключить микрофон">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                </button>
+                <button class="control-btn" title="Включить/выключить камеру">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 7l-7 5 7 5V7z"></path>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                </button>
+                <button class="control-btn" title="Показать/скрыть чат">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </button>
+                <button class="control-btn" title="Поделиться экраном">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 13h8M8 17h5M16 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"></path>
+                    </svg>
+                </button>
+                <button class="control-btn primary" title="Записать занятие">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10,8 16,12 10,16"></polygon>
+                    </svg>
+                </button>
+                <button class="control-btn danger" title="Завершить занятие">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 9l6 6m0-6l-6 6"></path>
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница личного кабинета -->
+<div id="personal-cabinet" class="page">
+    <div class="personal-cabinet">
+        <div class="cabinet-header">
+            <h1 class="cabinet-title">Личный кабинет</h1>
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img id="userAvatar" src="./images/УЧЕНИК 2.jpg" alt="Аватар пользователя">
+                </div>
+                <div class="user-name" id="userDisplayName">Иван Иванов</div>
+                <div class="user-type" id="userTypeDisplay">Ученик</div>
+            </div>
+        </div>
+        
+        <div class="cabinet-content">
+            <div class="cabinet-sidebar">
+                <ul class="sidebar-menu">
+                    <li class="active" data-section="my-lessons">Мои занятия</li>
+                    <li data-section="schedule">Расписание</li>
+                    <li data-section="payments">Оплата</li>
+                    <li data-section="materials">Учебные материалы</li>
+                    <li data-section="settings">Настройки</li>
+                </ul>
+            </div>
+            
+            <div class="cabinet-main">
+                <!-- Раздел для ученика -->
+                <div id="my-lessons-student" class="cabinet-section active">
+                    <h2 class="section-title">Мои занятия</h2>
+                    <div class="lesson-list">
+                        <div class="lesson-item">
+                            <div class="lesson-info">
+                                <div class="lesson-name">Математика с Анной Ивановной</div>
+                                <div class="lesson-details">
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Дата и время</div>
+                                        <div class="detail-value">15 мая, 16:00</div>
+                                    </div>
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Продолжительность</div>
+                                        <div class="detail-value">60 минут</div>
+                                    </div>
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Тема</div>
+                                        <div class="detail-value">Решение уравнений</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-status status-upcoming">Предстоящее</div>
+                            <button class="btn-join">Войти в класс</button>
+                        </div>
+                        
+                        <div class="lesson-item">
+                            <div class="lesson-info">
+                                <div class="lesson-name">Программирование с Ольгой Козловой</div>
+                                <div class="lesson-details">
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Дата и время</div>
+                                        <div class="detail-value">12 мая, 14:00</div>
+                                    </div>
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Продолжительность</div>
+                                        <div class="detail-value">90 минут</div>
+                                    </div>
+                                    <div class="lesson-detail">
+                                        <div class="detail-label">Тема</div>
+                                        <div class="detail-value">Основы Python</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-status status-completed">Завершено</div>
+                            <button class="btn-join" disabled>Завершено</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел для репетитора -->
+                <div id="my-lessons-tutor" class="cabinet-section">
+                    <h2 class="section-title">Мои занятия</h2>
+                    <div class="tutor-lesson-list">
+                        <div class="tutor-lesson-item">
+                            <div class="tutor-lesson-header">
+                                <div class="tutor-lesson-name">Математика - Решение уравнений</div>
+                                <div class="tutor-lesson-status status-confirmed">Подтверждено</div>
+                            </div>
+                            <div class="tutor-lesson-student">
+                                <img src="./images/УЧЕНИК 1.jpg" alt="Ученик" class="student-avatar">
+                                <div class="student-info">
+                                    <div class="student-name">Иван Иванов</div>
+                                    <div class="student-level">10 класс</div>
+                                </div>
+                            </div>
+                            <div class="tutor-lesson-details">
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Дата и время</div>
+                                    <div class="detail-value">15 мая, 16:00</div>
+                                </div>
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Продолжительность</div>
+                                    <div class="detail-value">60 минут</div>
+                                </div>
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Стоимость</div>
+                                    <div class="detail-value">1 200 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tutor-lesson-actions">
+                                <button class="btn-start">Начать занятие</button>
+                                <button class="btn-cancel">Отменить</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tutor-lesson-item">
+                            <div class="tutor-lesson-header">
+                                <div class="tutor-lesson-name">Программирование - Основы Python</div>
+                                <div class="tutor-lesson-status status-pending">Ожидает подтверждения</div>
+                            </div>
+                            <div class="tutor-lesson-student">
+                                <img src="./images/УЧЕНИК 2.jpg" alt="Ученик" class="student-avatar">
+                                <div class="student-info">
+                                    <div class="student-name">Дмитрий Волков</div>
+                                    <div class="student-level">Студент</div>
+                                </div>
+                            </div>
+                            <div class="tutor-lesson-details">
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Дата и время</div>
+                                    <div class="detail-value">18 мая, 14:00</div>
+                                </div>
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Продолжительность</div>
+                                    <div class="detail-value">90 минут</div>
+                                </div>
+                                <div class="tutor-lesson-detail">
+                                    <div class="detail-label">Стоимость</div>
+                                    <div class="detail-value">2 200 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tutor-lesson-actions">
+                                <button class="btn-start" disabled>Начать занятие</button>
+                                <button class="btn-cancel">Отменить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="schedule" class="cabinet-section">
+                    <h2 class="section-title">Расписание</h2>
+                    <div class="schedule-calendar">
+                        <!-- Календарь остается без изменений -->
+                        <div class="calendar-header">
+                            <h3>Май 2025</h3>
+                            <div class="calendar-nav">
+                                <button class="calendar-nav-btn">←</button>
+                                <button class="calendar-nav-btn">→</button>
+                            </div>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="calendar-day">Пн</div>
+                            <div class="calendar-day">Вт</div>
+                            <div class="calendar-day">Ср</div>
+                            <div class="calendar-day">Чт</div>
+                            <div class="calendar-day">Пт</div>
+                            <div class="calendar-day">Сб</div>
+                            <div class="calendar-day">Вс</div>
+                            
+                            <div class="calendar-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day">30</div>
+                            <div class="calendar-day">1</div>
+                            <div class="calendar-day">2</div>
+                            <div class="calendar-day">3</div>
+                            <div class="calendar-day">4</div>
+                            
+                            <div class="calendar-day">5</div>
+                            <div class="calendar-day">6</div>
+                            <div class="calendar-day">7</div>
+                            <div class="calendar-day">8</div>
+                            <div class="calendar-day">9</div>
+                            <div class="calendar-day">10</div>
+                            <div class="calendar-day">11</div>
+                            
+                            <div class="calendar-day">12</div>
+                            <div class="calendar-day">13</div>
+                            <div class="calendar-day">14</div>
+                            <div class="calendar-day has-lesson">15</div>
+                            <div class="calendar-day">16</div>
+                            <div class="calendar-day">17</div>
+                            <div class="calendar-day">18</div>
+                            
+                            <div class="calendar-day">19</div>
+                            <div class="calendar-day">20</div>
+                            <div class="calendar-day">21</div>
+                            <div class="calendar-day">22</div>
+                            <div class="calendar-day">23</div>
+                            <div class="calendar-day">24</div>
+                            <div class="calendar-day">25</div>
+                            
+                            <div class="calendar-day">26</div>
+                            <div class="calendar-day">27</div>
+                            <div class="calendar-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day">30</div>
+                            <div class="calendar-day">31</div>
+                            <div class="calendar-day">1</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел для репетитора -->
+                <div id="payments" class="cabinet-section">
+                    <h2 class="section-title">Оплата</h2>
+                    <div class="payment-info">
+                        <div class="payment-amount">15 750 ₽</div>
+                        <div class="payment-details">
+                            <div class="payment-detail">
+                                <div class="detail-label">Доступно для вывода</div>
+                                <div class="detail-value">12 500 ₽</div>
+                            </div>
+                            <div class="payment-detail">
+                                <div class="detail-label">В обработке</div>
+                                <div class="detail-value">3 250 ₽</div>
+                            </div>
+                        </div>
+                        <button class="btn-withdraw">Вывести средства</button>
+                    </div>
+                    
+                    <div class="payment-history">
+                        <h3>История операций</h3>
+                        <div class="payment-item">
+                            <div class="payment-date">12 мая 2025</div>
+                            <div class="payment-description">Оплата занятия по математике</div>
+                            <div class="payment-sum">+1 200 ₽</div>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-date">10 мая 2025</div>
+                            <div class="payment-description">Оплата занятия по программированию</div>
+                            <div class="payment-sum">+2 200 ₽</div>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-date">5 мая 2025</div>
+                            <div class="payment-description">Вывод средств</div>
+                            <div class="payment-sum">-10 000 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="materials" class="cabinet-section">
+                    <h2 class="section-title">Учебные материалы</h2>
+                    <p>Здесь будут отображаться ваши учебные материалы и задания.</p>
+                </div>
+                
+                <div id="settings" class="cabinet-section">
+                    <h2 class="section-title">Настройки профиля</h2>
+                    <div class="settings-form">
+                        <div class="settings-avatar-section">
+                            <img id="settingsAvatar" src="./images/анна ивановна.jpg" alt="Аватар" class="settings-avatar">
+                            <div class="settings-avatar-upload">
+                                <button type="button" class="avatar-upload-btn">Изменить аватар</button>
+                                <div style="font-size: 14px; color: #666;">JPG, PNG размером до 5MB</div>
+                            </div>
+                        </div>
+                        
+                        <div class="settings-form-group">
+                            <label class="settings-label">Имя</label>
+                            <input type="text" class="settings-input" id="firstName" placeholder="Введите ваше имя" value="Иван">
+                        </div>
+                        
+                        <div class="settings-form-group">
+                            <label class="settings-label">Фамилия</label>
+                            <input type="text" class="settings-input" id="lastName" placeholder="Введите вашу фамилию" value="Иванов">
+                        </div>
+                        
+                        <div class="settings-form-group">
+                            <label class="settings-label">О себе</label>
+                            <textarea class="settings-textarea" id="about" placeholder="Расскажите о себе">Ученик 10 класса, увлекаюсь математикой и программированием.</textarea>
+                        </div>
+                        
+                        <div class="settings-form-group">
+                            <label class="settings-label">Почта</label>
+                            <input type="email" class="settings-input" id="email" placeholder="Введите ваш email" value="ivan.ivanov@example.com">
+                        </div>
+                        
+                        <div class="settings-form-group">
+                            <label class="settings-label">Любимый предмет</label>
+                            <select class="settings-input" id="favoriteSubject">
+                                <option value="">Выберите предмет</option>
+                                <option value="math" selected>Математика</option>
+                                <option value="physics">Физика</option>
+                                <option value="chemistry">Химия</option>
+                                <option value="programming">Программирование</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="settings-submit">Сохранить изменения</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Страница Контакты -->
+    <div id="contacts" class="page">
+        <!-- Hero Section -->
+        <div class="contacts-hero">
+            <div class="about-hero-content">
+                <h1 class="contacts-title">Контакты</h1>
+                <p class="catalog-subtitle">Свяжитесь с нами для получения дополнительной информации</p>
+            </div>
+        </div>
+        
+        <!-- Contacts Content -->
+        <div class="contacts-content">
+            <div class="contacts-info">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="about-text">Мы всегда рады ответить на ваши вопросы и помочь вам начать обучение</p>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        info@learnlinq.ru<br>
+                        support@learnlinq.ru
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Телефон</div>
+                    <div class="contact-value">
+                        +7 (800) 123-45-67<br>
+                        +7 (495) 987-65-43
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Адрес</div>
+                    <div class="contact-value">
+                        Россия, Москва<br>
+                        ул. Примерная, д. 123
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Время работы</div>
+                    <div class="contact-value">
+                        Пн-Пт: 9:00 - 21:00<br>
+                        Сб-Вс: 10:00 - 18:00
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contacts-form">
+                <h2 class="form-title">Напишите нам</h2>
+                <form class="contact-form">
+                    <div class="form-input-group">
+                        <label class="form-input-label">Ваше имя</label>
+                        <input type="text" class="form-input" placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-input-group">
+                        <label class="form-input-label">Email</label>
+                        <input type="email" class="form-input" placeholder="Введите ваш email">
+                    </div>
+                    
+                    <div class="form-input-group">
+                        <label class="form-input-label">Сообщение</label>
+                        <textarea class="form-textarea" placeholder="Ваше сообщение ..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно для подробной информации -->
+    <div id="tutorModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Контент модального окна будет загружаться динамически -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="login-modal">
+        <div class="login-content">
+            <span class="close-login" onclick="closeLoginModal()">&times;</span>
+            <h2 class="login-title">Вход в личный кабинет</h2>
+            
+            <div class="user-type-selector">
+                <button class="user-type-btn active" data-type="student">Ученик</button>
+                <button class="user-type-btn" data-type="tutor">Репетитор</button>
+            </div>
+            
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="Ваш email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-input" placeholder="Ваш пароль" required>
+                </div>
+                
+                <button type="submit" class="login-submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Общая Newsletter Section -->
+    <div class="newsletter">
+        <div class="newsletter-content">
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-text">Подпишитесь, чтобы получать новости, акции и многое другое</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Ваш email ...">
+                <button class="newsletter-btn">Подписаться</button>
+            </div>
+        </div>
+        <div class="newsletter-image">
+            <img src="./images/почта.jpg" alt="Образовательная платформа">
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./images/лого.png">
+                    <div class="l">L</div>
+                    <div class="earn">earn</div>
+                    <div class="linq">Linq</div>
+                </div>
+                <p class="footer-text">
+                    Начни свое путешествие в мир знаний с LearnLinq.<br>
+                    Дарим любовь в каждом занятии.
+                </p>
+                <div class="social-section">
+                    <div class="social-icons">
+                        <div class="social-icon">VK</div>
+                        <div class="social-icon">TG</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                    <div class="copyright">© 2025 LearnLinq. Все права защищены.</div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <div class="footer-links">
+                    <div class="nav-item" data-page="home">ГЛАВНАЯ</div>
+                    <div class="nav-item" data-page="about">О НАС</div>
+                    <div class="nav-item" data-page="catalog">КАТАЛОГ РЕПЕТИТОРОВ</div>
+                    <div class="nav-item" data-page="virtual-class">ВИРТУАЛЬНЫЙ КЛАСС</div>
+                    <div class="nav-item" data-page="contacts">КОНТАКТЫ</div>
+                    <div class="nav-item" data-page="personal-cabinet">ЛИЧНЫЙ КАБИНЕТ</div>
+                </div>
+            </div>
+            
+            <div class="footer-section footer-contact">
+                <h3>КОНТАКТЫ</h3>
+                <p>Россия, Москва, ул. Примерная, д. 123</p>
+                <p>+7 (800) 123-45-67<br>+7 (495) 987-65-43</p>
+                <p>info@learnlinq.ru<br>support@learnlinq.ru</p>
+            </div>
+            
+            <div class="footer-section footer-hours">
+                <h3>РЕЖИМ РАБОТЫ</h3>
+                <p>Пн-Пт: 9:00 - 21:00<br>Сб-Вс: 10:00 - 18:00</p>
+                <p>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+            </div>
+        </div>
+    </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
